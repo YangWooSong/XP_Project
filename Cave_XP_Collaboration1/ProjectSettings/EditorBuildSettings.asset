@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/WireScene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AnagramGame.unity
+    guid: 003f95a6ec283a94c9a3a07466ac80a7
+  - enabled: 1
+    path: Assets/Scenes/MemoryScene.unity
+    guid: 591a17bc5c2cf224bb2c79de4f3224dd
+  - enabled: 1
+    path: Assets/Scenes/GameTestScene.unity
+    guid: de41b01bb339e794f9287bf5597f2736
+  - enabled: 1
+    path: Assets/Scenes/WireScene.unity
+    guid: b6197326990ce0b45983eb7fc0b29272
   m_configObjects: {}
