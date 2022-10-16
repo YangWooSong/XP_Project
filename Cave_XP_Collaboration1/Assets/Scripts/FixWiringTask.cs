@@ -124,6 +124,7 @@ public class FixWiringTask : MonoBehaviour
         if (isAllComplete)
         {
             Debug.Log("clear");
+            MainGameManagerScr.wireClear = true;
         }
 
     }

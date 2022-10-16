@@ -6,7 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     //시간 15초 임의 설정
-    private float timeDuration = 15f;         //최대 시간
+    private float timeDuration ;         //최대 시간
     private float timer;
 
     [SerializeField]
@@ -20,13 +20,20 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI secondSecond;
 
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
         //타이머 시간 설정
-        ResetTimer();
+        
+        
     }
     void Update()
     {
+        timeDuration = MainGameManagerScr.timeLimit;
+        ResetTimer();
         if (timer > 11f)
         {
             timer -= Time.deltaTime;

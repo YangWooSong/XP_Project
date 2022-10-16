@@ -20,20 +20,24 @@ public class SceneChange : MonoBehaviour
     public void GoToAnagramScene()
     {
         SceneManager.LoadScene("AnagramGame");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = false;
     }
     public void GoToMemoryScene()
     {
         SceneManager.LoadScene("MemoryScene");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = false;
     }
 
     public void GoToWireScene()
     {
         SceneManager.LoadScene("WireScene");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = false;
     }
 
     public void GoToGameTestScene()
     {
         SceneManager.LoadScene("GameTestScene");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = true;
     }
 
 
