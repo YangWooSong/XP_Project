@@ -7,6 +7,8 @@ TagManager:
   - task-wire
   - BtnActive1
   - Empty
+  - MonsterRoomDoor
+  - Item
   layers:
   - Default
   - TransparentFX
