@@ -13,7 +13,7 @@ public class MemoryMain : MonoBehaviour
     [SerializeField]
     private List<Button> SelectBtn;
 
-    private string GoalString;
+    private string GoalString = "";
     private string TextIn;
     private bool TextTest=true;
    
@@ -24,11 +24,14 @@ public class MemoryMain : MonoBehaviour
 
     
     {
+        allBtnSetFalse();
+
+        
 
         Debug.Log("2¹øÇÔ¼ö");
         ShowSpot2(2);
-        InvokeRepeating("HideSpot2", 2f, 2f);
-        Invoke("CancleInvokeHide", 11f);
+        InvokeRepeating("HideSpot2", 1f, 1f);
+        Invoke("CancleInvokeHide", 6f);
         //Debug.Log(WhenStart);
 
 
@@ -55,13 +58,29 @@ public class MemoryMain : MonoBehaviour
         if (WhenStart == 5)
         {
             ShowSpot2(3);
-            
+            allBtnSetTrue();
+
+
+
+        }
+        int GoalStringint = GoalString.Length;
+        if (GoalStringint == 5)
+        {
+            if (GoalString == "25463")
+            {
+                Debug.Log("game clear");
+                Debug.Log(MemoryTimer.MemorytimeDuration);
+                MainGameManagerScr.TimeAdd((int)MemoryTimer.MemorytimeDuration);
+                
+            }
+            else
+            {
+                Debug.Log("game over");
+                MainGameManagerScr.TimeSub((int)MemoryTimer.MemorytimeDuration);
+            }
         }
         //Debug.Log(GoalString);
-        if(GoalString == "25463")
-        {
-            Debug.Log("game clear");
-        }
+        
     }
     public void onClickGame()
     {
@@ -97,5 +116,15 @@ public class MemoryMain : MonoBehaviour
     {
         
         CancelInvoke("HideSpot2");
+    }
+    private void allBtnSetFalse()
+    {
+        for (int temp = 0; temp < 9; temp++)
+            SelectBtn[temp].interactable = false;
+    }
+    private void allBtnSetTrue()
+    {
+        for (int temp = 0; temp < 9; temp++)
+            SelectBtn[temp].interactable = true;
     }
 }

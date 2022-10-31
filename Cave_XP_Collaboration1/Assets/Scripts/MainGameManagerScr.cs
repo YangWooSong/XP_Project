@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainGameManagerScr : MonoBehaviour
 {
     public static MainGameManagerScr instance;
-    public static float timeLimit= 100f;
+    public static float timeLimit= 100f;//√— ∞‘¿” Ω√∞£ 
     public static bool wireClear = false;
     public static bool timeGo = true;
     // Start is called before the first frame update
@@ -29,5 +29,15 @@ public class MainGameManagerScr : MonoBehaviour
 
         }
         
+    }
+    public static void TimeSub(int getTime)
+    {
+        timeLimit -= getTime;
+        MemoryTimer.MemorytimeDuration = 0;
+    }
+    public static void TimeAdd(int getTime)
+    {
+        timeLimit += getTime;
+        MemoryTimer.MemorytimeDuration = 0;
     }
 }
