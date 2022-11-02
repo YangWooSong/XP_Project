@@ -8,6 +8,7 @@ public class MainGameManagerScr : MonoBehaviour
     public static float timeLimit= 100f;//√— ∞‘¿” Ω√∞£ 
     public static bool wireClear = false;
     public static bool timeGo = true;
+  
     // Start is called before the first frame update
 
     void Start()

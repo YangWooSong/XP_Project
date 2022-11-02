@@ -8,15 +8,10 @@ public class SceneChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+ 
     public void GoToAnagramScene()
     {
         SceneManager.LoadScene("AnagramGame");  //다른 Scene으로 넘어가기
@@ -39,6 +34,16 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene("GameTestScene");  //다른 Scene으로 넘어가기
         MainGameManagerScr.timeGo = true;
     }
+   
 
+    public void GoToControl() { 
+        SceneManager.LoadScene("Controll_monstor_room");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = true;
+    }
+    public void GoToSetting()
+    {
+        SceneManager.LoadScene("Setting_room 1");  //다른 Scene으로 넘어가기
+        MainGameManagerScr.timeGo = true;
+    }
 
 }
