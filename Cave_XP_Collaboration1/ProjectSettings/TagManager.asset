@@ -9,6 +9,7 @@ TagManager:
   - Empty
   - MonsterRoomDoor
   - Item
+  - NameTag
   layers:
   - Default
   - TransparentFX
