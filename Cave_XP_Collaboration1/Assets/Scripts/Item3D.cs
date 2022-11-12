@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class Item3D : MonoBehaviour
 {
   
-     Image S_image; //슬롯 이미지
+      Image S_image; //슬롯 이미지
       public Sprite EmptyImage;  //투명 이미지
       public Sprite ItemImage; // 아이템 이미지
       public GameObject SlotItem; //아이템별 슬롯 지정
