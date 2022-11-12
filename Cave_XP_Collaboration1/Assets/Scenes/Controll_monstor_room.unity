@@ -312,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 670828891797843428, guid: 6799b3006299cfb4098d3b968d11ac4c, type: 3}
       propertyPath: inventoryPanel
       value: 
-      objectReference: {fileID: 1849121742}
+      objectReference: {fileID: 0}
     - target: {fileID: 670828891797843430, guid: 6799b3006299cfb4098d3b968d11ac4c, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -1182,11 +1182,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763b37f5e4628a74a8b0bcb711fa749a, type: 3}
---- !u!1 &517545654 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4146424558692893153, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-  m_PrefabInstance: {fileID: 1849121740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &528958589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2290,7 +2285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Quit
 --- !u!222 &1715082194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2518,6 +2513,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1a82d631d2c5494bac0bd615bd2f1bf, type: 3}
+--- !u!1 &1797888673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4146424558810001152, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+  m_PrefabInstance: {fileID: 1849121740}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1849121740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2525,18 +2525,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 12865428}
     m_Modifications:
-    - target: {fileID: 15707960704014143, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1642680662}
-    - target: {fileID: 15707960704014143, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: getInvenButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 15707960704014143, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainGameManagerScr, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 4146424557368142607, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2782,11 +2770,6 @@ PrefabInstance:
 --- !u!4 &1849121741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7064144408758427896, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-  m_PrefabInstance: {fileID: 1849121740}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1849121742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 15707961237534588, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
   m_PrefabInstance: {fileID: 1849121740}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1855424067
@@ -3151,7 +3134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EmptyImage: {fileID: 21300000, guid: 2a29f2e081d2a934cbb442bbc0b23bcf, type: 3}
   ItemImage: {fileID: 21300000, guid: 09b4ab04ccc2e9046a681b684be3e8e8, type: 3}
-  SlotItem: {fileID: 517545654}
+  SlotItem: {fileID: 1797888673}
 --- !u!1 &2134161519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4620282718447106903, guid: be5366c943e55c44e850d25ca78016d9, type: 3}

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class DoorAndGame : MonoBehaviour
 {
     public bool cam0, cam1;
-
+    
     void Start()
     {
         cam0 = true;
@@ -20,6 +20,7 @@ public class DoorAndGame : MonoBehaviour
         {
             if (gameObject.CompareTag("ToSetting"))
             {
+                
                 SceneManager.LoadScene("Setting_room 1");
             }
             else if (gameObject.CompareTag("MonsterRoomDoor"))
