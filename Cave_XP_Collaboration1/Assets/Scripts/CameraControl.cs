@@ -15,7 +15,7 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameras[0].SetActive(GameObject.Find("polySurface3").GetComponent<MonsterRoom>().cam0);
-        cameras[1].SetActive(GameObject.Find("polySurface3").GetComponent<MonsterRoom>().cam1);
+        cameras[0].SetActive(GameObject.Find("polySurface3").GetComponent<DoorAndGame>().cam0);
+        cameras[1].SetActive(GameObject.Find("polySurface3").GetComponent <DoorAndGame> ().cam1);
     }
 }

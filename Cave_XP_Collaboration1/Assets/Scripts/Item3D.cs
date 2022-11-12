@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
 
 public class Item3D : MonoBehaviour
 {
@@ -22,14 +24,18 @@ public class Item3D : MonoBehaviour
 
     private void OnMouseDown()
     {
-        SlotItem.GetComponent<Button>().interactable = true;    //슬롯 버튼 활성화
-        S_image.sprite = ItemImage;     //슬롯 이미지 아이템으로 변경
-        if (gameObject.CompareTag("NameSpace"))
+        //ui뒤에 물체는 눌리지 않게 하는 코드
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
+            SlotItem.GetComponent<Button>().interactable = true;    //슬롯 버튼 활성화
+            S_image.sprite = ItemImage;     //슬롯 이미지 아이템으로 변경
+            if (gameObject.CompareTag("NameTag"))
+            {
+                //문열리게 하는 코드
+            }  
+            Destroy(gameObject);
 
         }
-        Destroy(gameObject);
-        Debug.Log("겟");
 
 
     }
