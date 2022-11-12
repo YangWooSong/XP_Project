@@ -9,11 +9,9 @@ public class MainGameManagerScr : MonoBehaviour
     public static bool wireClear = false;
     public static bool timeGo = true;
 
-
     public GameObject inventoryPanel;   //인벤토리 패널
     bool activeInven;       //인벤 패널 활성화 상태
   
-
     void Start()
     {
         instance = this;
@@ -47,15 +45,14 @@ public class MainGameManagerScr : MonoBehaviour
     }
     public void getInvenButton()
     {
-        Debug.Log("클릭");
-        Debug.Log(MainGameManagerScr.timeGo);
+       // Debug.Log(MainGameManagerScr.timeGo);
         activeInven = !activeInven;     //버튼 누를때 마다 활성 or 비활성
-        if(activeInven == true)
-        {
-            
-        }
         inventoryPanel.SetActive(activeInven);      // bool값 적용
         MainGameManagerScr.timeGo = !MainGameManagerScr.timeGo;
-
+    }
+    public void ApplicationQuit()
+    {
+        Application.Quit();
+        Debug.Log("닫힘");
     }
 }

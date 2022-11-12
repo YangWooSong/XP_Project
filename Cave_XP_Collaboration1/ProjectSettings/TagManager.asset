@@ -10,6 +10,9 @@ TagManager:
   - MonsterRoomDoor
   - Item
   - NameTag
+  - ToSetting
+  - ToWare
+  - Puzzle2
   layers:
   - Default
   - TransparentFX
