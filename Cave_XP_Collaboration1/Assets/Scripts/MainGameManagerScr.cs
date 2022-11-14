@@ -39,6 +39,14 @@ public class MainGameManagerScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timeLimit <= 0)
+        {
+            SceneManager.LoadScene("gameOverScene");
+            Debug.Log("°× ¿À¹ö");
+            Destroy(this);
+            
+    
+        }
         //Debug.Log(timeGo);
         if (timeGo)
         {
