@@ -34,6 +34,7 @@ public class mainBtnManagerScr : MonoBehaviour
     void btnStart()
     {
         SceneManager.LoadScene("Controll_monstor_room");
+        MainGameManagerScr.timeGo=true;
     }
     void btnOption()
     {

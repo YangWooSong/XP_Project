@@ -10,13 +10,16 @@ public class MainGameManagerScr : MonoBehaviour
     public static bool wireClear = false;
     public static bool timeGo = true;
 
-    public GameObject inventoryPanel;   //인벤토리 패널
+    private GameObject QuitBtn;
+
+    private GameObject inventoryPanel;   //인벤토리 패널
     public static bool activeInven = false;       //인벤 패널 활성화 상태
     Button invenBtn;
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //씬 로드 될 때마다 실행
+        QuitBtn = GameObject.Find("QuitBtn");
         inventoryPanel = GameObject.Find("Inventory");
         inventoryPanel.SetActive(activeInven);      //인벤 비활성화
 
@@ -39,11 +42,18 @@ public class MainGameManagerScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (activeInven == true)
+        {
+            QuitBtn.SetActive(false);
+        }
+        else
+        {
+            QuitBtn.SetActive(true);
+        }
         if (timeLimit <= 0)
         {
             SceneManager.LoadScene("gameOverScene");
             Debug.Log("겜 오버");
-            Destroy(this);
             
     
         }

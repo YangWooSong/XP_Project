@@ -668,13 +668,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164256895}
-  m_LocalRotation: {x: 0.0023988362, y: -0.8826463, z: 0.47001013, w: 0.004507926}
-  m_LocalPosition: {x: 0.082433805, y: 20.75341, z: 13.308479}
+  m_LocalRotation: {x: 0.008193429, y: -0.8828132, z: 0.46940005, w: 0.0154096}
+  m_LocalPosition: {x: 0, y: 20.7, z: 13.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 56, y: -178, z: 0}
 --- !u!1001 &166329663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2513,11 +2513,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1a82d631d2c5494bac0bd615bd2f1bf, type: 3}
---- !u!1 &1797888673 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4146424558810001152, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
-  m_PrefabInstance: {fileID: 1849121740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1849121740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2848,13 +2843,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855424067}
-  m_LocalRotation: {x: -0.34270635, y: 0.007612026, z: -0.002776492, w: -0.9394077}
-  m_LocalPosition: {x: -18.873528, y: 16.089334, z: -13.361212}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: -18.8, y: 16, z: -13.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 135.489, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!1001 &1871400011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3132,9 +3127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bbd689bacc7754ab8720903b34f81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmptyImage: {fileID: 21300000, guid: 2a29f2e081d2a934cbb442bbc0b23bcf, type: 3}
-  ItemImage: {fileID: 21300000, guid: 09b4ab04ccc2e9046a681b684be3e8e8, type: 3}
-  SlotItem: {fileID: 1797888673}
 --- !u!1 &2134161519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4620282718447106903, guid: be5366c943e55c44e850d25ca78016d9, type: 3}
