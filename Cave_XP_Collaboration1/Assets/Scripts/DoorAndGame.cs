@@ -16,40 +16,45 @@ public class DoorAndGame : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!EventSystem.current.IsPointerOverGameObject())
-        {
-            if (gameObject.CompareTag("ToSetting"))
+       
+            if (!EventSystem.current.IsPointerOverGameObject())
             {
-                
-                SceneManager.LoadScene("Setting_room 1");
-            }
-            else if (gameObject.CompareTag("MonsterRoomDoor"))
-            {
-                cam0 = !cam0;
-                cam1 = !cam1;
-            }
-            else if (gameObject.CompareTag("ToWare"))
-            {
-                SceneManager.LoadScene("WarehouseScene");
-            }
-            else if (gameObject.CompareTag("ToControl"))
-            {
-                SceneManager.LoadScene("Controll_monstor_room");
-            }
-            else if (gameObject.CompareTag("Puzzle1"))
-            {
-                SceneManager.LoadScene("WireScene");
-            }
-            else if (gameObject.CompareTag("Puzzle2"))
-            {
-                SceneManager.LoadScene("MemoryScene");
-            }
-            else if (gameObject.CompareTag("Puzzle3"))
-            {
-                SceneManager.LoadScene("AnagramGame");
-            }
-        }
+                if (gameObject.CompareTag("ToSetting"))
+                {
 
-
+                    SceneManager.LoadScene("Setting_room 1");
+                }
+                else if (gameObject.CompareTag("MonsterRoomDoor"))
+                {
+                    cam0 = !cam0;
+                    cam1 = !cam1;
+                }
+                else if (gameObject.CompareTag("ToWare"))
+                {
+                    SceneManager.LoadScene("WarehouseScene");
+                }
+                /*else if (gameObject.CompareTag("ToControl"))
+                {
+                    SceneManager.LoadScene("Controll_monstor_room");
+                }
+                else if (gameObject.CompareTag("Puzzle1"))
+                {
+                    SceneManager.LoadScene("WireScene");
+                }*/
+                else if (gameObject.CompareTag("Puzzle2"))
+                {
+                    SceneManager.LoadScene("MemoryScene");
+                }
+                else if (gameObject.CompareTag("Puzzle3"))
+                {
+                    SceneManager.LoadScene("AnagramGame");
+                }
+            }
+        
+          
+            
     }
+
+
+    
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class MainGameManagerScr : MonoBehaviour
 {
     public static MainGameManagerScr instance;
@@ -42,14 +43,14 @@ public class MainGameManagerScr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activeInven == true)
+       /* if (activeInven == true)
         {
             QuitBtn.SetActive(false);
         }
         else
         {
             QuitBtn.SetActive(true);
-        }
+        }*/
         if (timeLimit <= 0)
         {
             SceneManager.LoadScene("gameOverScene");
@@ -89,8 +90,13 @@ public class MainGameManagerScr : MonoBehaviour
     }
     public void ApplicationQuit()
     {
-        Application.Quit();
-        Debug.Log("´ÝÈû");
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            //UI¿¡ °¡·ÁÁö¸é ÀÛµ¿ X
+            Application.Quit();
+            Debug.Log("´ÝÈû");
+        }
+           
     }
 
     void OnDisable()
