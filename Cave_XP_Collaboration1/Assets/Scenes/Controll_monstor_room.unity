@@ -2561,6 +2561,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 15707961237534584, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+      propertyPath: m_Spacing.x
+      value: 100.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 15707961237534584, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+      propertyPath: m_CellSize.x
+      value: 117.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 15707961237534584, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 15707961237534589, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 15707961237534589, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 4146424557368142607, guid: 573f9af711306d44787eab7cbaa16682, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

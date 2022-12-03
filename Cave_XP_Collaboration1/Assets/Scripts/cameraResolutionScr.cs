@@ -20,11 +20,13 @@ public class cameraResolutionScr : MonoBehaviour
         else
         {
             rect.width = scalewidth;
-            rect.x = (1f - scaleheight) / 2f;
+            rect.x = (scaleheight - 1f) / 2f;
         }
         camera.rect = rect;
 
     }
+
+    private void OnPreCull() => GL.Clear(true, true, Color.black);
     void Start()
     {
         
