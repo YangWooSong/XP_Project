@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Item3D.cs" />
     <Compile Include="Assets\Scripts\WireTimerScr.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\cameraZoomScr.cs" />
     <Compile Include="Assets\Scripts\MainGameManagerScr.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\DoorAndGame.cs" />
@@ -107,7 +108,7 @@
     <Compile Include="Assets\Scripts\endingBtnScr.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\LeftWire.cs" />
-    <Compile Include="Assets\Scripts\cameraZoomScr.cs" />
+    <Compile Include="Assets\Scripts\cameraResolutionScr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
