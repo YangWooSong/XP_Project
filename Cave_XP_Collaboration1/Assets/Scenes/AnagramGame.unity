@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 8193271}
   - component: {fileID: 8193273}
   m_Layer: 5
-  m_Name: Empty3
+  m_Name: Empty2
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 18717985}
   - component: {fileID: 18717987}
   m_Layer: 5
-  m_Name: Empty5
+  m_Name: Empty4
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 134718095}
   - component: {fileID: 134718096}
   m_Layer: 5
-  m_Name: MImage
+  m_Name: M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,6 +418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &134718095
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -480,7 +482,7 @@ GameObject:
   - component: {fileID: 218415444}
   - component: {fileID: 218415445}
   m_Layer: 5
-  m_Name: LImage
+  m_Name: L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -556,6 +558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &218415444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -616,7 +620,7 @@ GameObject:
   - component: {fileID: 276359153}
   - component: {fileID: 276359155}
   m_Layer: 5
-  m_Name: Empty6
+  m_Name: Empty5
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,7 +724,7 @@ GameObject:
   - component: {fileID: 445801047}
   - component: {fileID: 445801048}
   m_Layer: 5
-  m_Name: EImage2
+  m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,6 +800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &445801047
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1189,7 +1195,7 @@ GameObject:
   - component: {fileID: 968693227}
   - component: {fileID: 968693228}
   m_Layer: 5
-  m_Name: VImage1
+  m_Name: V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1265,6 +1271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &968693227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1461,7 +1469,7 @@ GameObject:
   - component: {fileID: 1168597273}
   - component: {fileID: 1168597274}
   m_Layer: 5
-  m_Name: EImage1
+  m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1537,6 +1545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &1168597273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1599,7 +1609,7 @@ GameObject:
   - component: {fileID: 1193764485}
   - component: {fileID: 1193764484}
   m_Layer: 5
-  m_Name: OImage
+  m_Name: O
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1675,6 +1685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptyObj: {fileID: 0}
+  emptyNum: 0
+  AlpName: 
 --- !u!61 &1193764484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1735,7 +1747,7 @@ GameObject:
   - component: {fileID: 1301474870}
   - component: {fileID: 1301474872}
   m_Layer: 5
-  m_Name: Empty4
+  m_Name: Empty3
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1835,6 +1847,7 @@ GameObject:
   - component: {fileID: 1335248306}
   - component: {fileID: 1335248308}
   - component: {fileID: 1335248307}
+  - component: {fileID: 1335248309}
   m_Layer: 5
   m_Name: Anagram UI
   m_TagString: Untagged
@@ -1911,6 +1924,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335248305}
   m_CullTransparentMesh: 1
+--- !u!114 &1335248309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335248305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0803c47d5c7959248a9a3150b330c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1374001146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,7 +1949,7 @@ GameObject:
   - component: {fileID: 1374001148}
   - component: {fileID: 1374001150}
   m_Layer: 5
-  m_Name: Empty2
+  m_Name: Empty1
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2219,7 @@ GameObject:
   - component: {fileID: 2025505838}
   - component: {fileID: 2025505840}
   m_Layer: 5
-  m_Name: Empty1
+  m_Name: Empty0
   m_TagString: Empty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

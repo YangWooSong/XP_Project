@@ -7,13 +7,15 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public static Vector2 DefaultPos;
     public static Vector2 EmptyPos;
     public GameObject EmptyObj;
+    public int emptyNum;
+    public string AlpName;
 
     private bool onImage=false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        AlpName = this.gameObject.name;
     }
 
     // Update is called once per frame
@@ -58,6 +60,9 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
             EmptyObj = collision.gameObject;
             Debug.Log("Ãæµ¹");
             onImage = true;
+            string emptyName =collision.gameObject.name;
+            int emptyNum = int.Parse(emptyName.Substring(5, 1));
+            AnagramScr.clearWord[emptyNum] = AlpName;
         }
         
 
