@@ -36,11 +36,11 @@ public class DoorAndGame : MonoBehaviour
                 /*else if (gameObject.CompareTag("ToControl"))
                 {
                     SceneManager.LoadScene("Controll_monstor_room");
-                }
+                }*/
                 else if (gameObject.CompareTag("Puzzle1"))
                 {
                     SceneManager.LoadScene("WireScene");
-                }*/
+                }
                 else if (gameObject.CompareTag("Puzzle2"))
                 {
                     SceneManager.LoadScene("MemoryScene");

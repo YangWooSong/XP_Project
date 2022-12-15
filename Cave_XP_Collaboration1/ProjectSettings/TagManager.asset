@@ -15,6 +15,7 @@ TagManager:
   - Puzzle2
   - Puzzle3
   - telpos
+  - Puzzle1
   layers:
   - Default
   - TransparentFX

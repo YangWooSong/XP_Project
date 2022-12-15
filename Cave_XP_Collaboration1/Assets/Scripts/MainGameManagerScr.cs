@@ -15,17 +15,22 @@ public class MainGameManagerScr : MonoBehaviour
 
     private GameObject inventoryPanel;   //인벤토리 패널
     public static bool activeInven = false;       //인벤 패널 활성화 상태
-    Button invenBtn;
+    private GameObject invenBtn;
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //씬 로드 될 때마다 실행
         QuitBtn = GameObject.Find("QuitBtn");
         inventoryPanel = GameObject.Find("Inventory");
-        inventoryPanel.SetActive(activeInven);      //인벤 비활성화
-
-        invenBtn = GameObject.Find("InvenButton").GetComponent<Button>();
-        invenBtn.onClick.AddListener(getInvenButton);
+        invenBtn = GameObject.Find("InvenButton");
+        if (inventoryPanel)
+            inventoryPanel.SetActive(activeInven);      //인벤 비활성화
+        
+        if(invenBtn)
+        {
+            invenBtn.GetComponent<Button>().onClick.AddListener(getInvenButton);
+        }
+    
 
     }
     void OnEnable()
