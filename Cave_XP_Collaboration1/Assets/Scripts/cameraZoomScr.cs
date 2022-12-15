@@ -37,7 +37,7 @@ public class cameraZoomScr : MonoBehaviour
                     zoomObj.SetActive(false);
                     mainCam.gameObject.transform.position = telposGameObj.transform.position;
                     mainCam.gameObject.transform.rotation = telposGameObj.transform.rotation;
-                    //Debug.Log("성공");
+                    Debug.Log("성공");
 
                 }
             }
