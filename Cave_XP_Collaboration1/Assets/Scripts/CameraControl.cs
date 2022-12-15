@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public GameObject[] cameras;
-    public bool cam0Activee, cam1Active;
+    //public bool cam0Activee, cam1Active;
     // Start is called before the first frame update
     void Start()
     {
