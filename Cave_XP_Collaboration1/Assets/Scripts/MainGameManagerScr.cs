@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class MainGameManagerScr : MonoBehaviour
 {
     public static MainGameManagerScr instance;
-    public static float timeLimit= 100f;//√— ∞‘¿” Ω√∞£ 
+    public static float timeLimit = 100f;//√— ∞‘¿” Ω√∞£ 
     public static bool wireClear = false;
     public static bool timeGo = true;
 
@@ -25,12 +25,12 @@ public class MainGameManagerScr : MonoBehaviour
         invenBtn = GameObject.Find("InvenButton");
         if (inventoryPanel)
             inventoryPanel.SetActive(activeInven);      //¿Œ∫• ∫Ò»∞º∫»≠
-        
-        if(invenBtn)
+
+        if (invenBtn)
         {
             invenBtn.GetComponent<Button>().onClick.AddListener(getInvenButton);
         }
-    
+
 
     }
     void OnEnable()
@@ -42,38 +42,38 @@ public class MainGameManagerScr : MonoBehaviour
     void Start()
     {
         instance = this;
-     
+
     }
- 
+
     // Update is called once per frame
     void Update()
     {
-       /* if (activeInven == true)
-        {
-            QuitBtn.SetActive(false);
-        }
-        else
-        {
-            QuitBtn.SetActive(true);
-        }*/
+        /* if (activeInven == true)
+         {
+             QuitBtn.SetActive(false);
+         }
+         else
+         {
+             QuitBtn.SetActive(true);
+         }*/
         if (timeLimit <= 0)
         {
             SceneManager.LoadScene("gameOverScene");
             Debug.Log("∞◊ ø¿πˆ");
-            
-    
+
+
         }
         //Debug.Log(timeGo);
         if (timeGo)
         {
             timeLimit -= Time.deltaTime;
-            
+
         }
         else
         {
 
         }
-   
+
 
     }
     public static void TimeSub(int getTime)
@@ -101,7 +101,7 @@ public class MainGameManagerScr : MonoBehaviour
             Application.Quit();
             Debug.Log("¥›»˚");
         }
-           
+
     }
 
     void OnDisable()
