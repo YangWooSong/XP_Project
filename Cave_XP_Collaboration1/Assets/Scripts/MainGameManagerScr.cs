@@ -17,12 +17,19 @@ public class MainGameManagerScr : MonoBehaviour
     public static bool activeInven = false;       //인벤 패널 활성화 상태
     private GameObject invenBtn;
 
+    //아이템 설정
+    public bool getNameTag = false;
+    private GameObject s_nameTag;
+
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //씬 로드 될 때마다 실행
         QuitBtn = GameObject.Find("QuitBtn");
         inventoryPanel = GameObject.Find("Inventory");
         invenBtn = GameObject.Find("InvenButton");
+        s_nameTag = GameObject.Find("S_NameTag");
+
         if (inventoryPanel)
             inventoryPanel.SetActive(activeInven);      //인벤 비활성화
 
@@ -74,7 +81,8 @@ public class MainGameManagerScr : MonoBehaviour
 
         }
 
-
+        //인벤 슬롯 활성화 부분
+        s_nameTag.SetActive(getNameTag);
     }
     public static void TimeSub(int getTime)
     {
