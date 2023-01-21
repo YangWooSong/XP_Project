@@ -14,11 +14,31 @@ public class MainGameManagerScr : MonoBehaviour
     public static bool activeInven = false;       //인벤 패널 활성화 상태
     Button invenBtn;
 
+
+    //아이템 설정
+    public bool getNameTag = false;
+    private GameObject s_nameTag;
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //씬 로드 될 때마다 실행
         inventoryPanel = GameObject.Find("Inventory");
+<<<<<<< Updated upstream
         inventoryPanel.SetActive(activeInven);      //인벤 비활성화
+=======
+        invenBtn = GameObject.Find("InvenButton");
+        s_nameTag = GameObject.Find("S_NameTag");
+
+        if (inventoryPanel)
+        {
+            inventoryPanel.SetActive(activeInven);      //인벤 비활성화    
+        }
+            
+        if (invenBtn)
+        {
+            invenBtn.GetComponent<Button>().onClick.AddListener(getInvenButton);
+
+        }
+>>>>>>> Stashed changes
 
         invenBtn = GameObject.Find("InvenButton").GetComponent<Button>();
         invenBtn.onClick.AddListener(getInvenButton);
@@ -49,8 +69,14 @@ public class MainGameManagerScr : MonoBehaviour
         {
 
         }
+<<<<<<< Updated upstream
    
 
+=======
+
+        //인벤 슬롯 활성화 부분
+        s_nameTag.SetActive(getNameTag);
+>>>>>>> Stashed changes
     }
     public static void TimeSub(int getTime)
     {

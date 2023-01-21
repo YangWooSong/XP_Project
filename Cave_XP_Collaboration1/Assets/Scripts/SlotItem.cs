@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SlotItem : MonoBehaviour
 {
     public GameObject ex_panel;     //설명 패널
-    private bool ex_plainPanel_show = false;    // 설명 패널 비활성화
+    public bool ex_plainPanel_show = false;    // 설명 패널 비활성화
 
     // Start is called before the first frame update
     void Start()
