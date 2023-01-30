@@ -19,9 +19,21 @@ public class MainGameManagerScr : MonoBehaviour
 
     //아이템 설정
     public bool getNameTag = false;
+    public bool getSaw = false;
+    public bool getHandcloth = false;
+    public bool getMonsterFoot = false;
+    public bool getRipHand = false;
+    public bool getFoot01 = false;
+    public bool getFoot02 = false;
+    public bool getFoot03 = false;
     private GameObject s_nameTag;
-
-
+    private GameObject s_saw;
+    private GameObject s_handcloth;
+    private GameObject s_monsterFoot;
+    private GameObject s_ripHand;
+    private GameObject s_foot01;
+    private GameObject s_foot02;
+    private GameObject s_foot03;
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         //씬 로드 될 때마다 실행
@@ -29,7 +41,13 @@ public class MainGameManagerScr : MonoBehaviour
         inventoryPanel = GameObject.Find("Inventory");
         invenBtn = GameObject.Find("InvenButton");
         s_nameTag = GameObject.Find("S_NameTag");
-
+        s_saw = GameObject.Find("S_Saw");
+        s_handcloth = GameObject.Find("S_Handcloth");
+        s_monsterFoot = GameObject.Find("S_MonsterFoot");
+        s_ripHand = GameObject.Find("S_RipHand");
+        s_foot01 = GameObject.Find("S_Footprint_01");
+        s_foot02 = GameObject.Find("S_Footprint_02");
+        s_foot03 = GameObject.Find("S_Footprint_03");
         if (inventoryPanel)
             inventoryPanel.SetActive(activeInven);      //인벤 비활성화
 
@@ -82,7 +100,18 @@ public class MainGameManagerScr : MonoBehaviour
         }
 
         //인벤 슬롯 활성화 부분
-        s_nameTag.SetActive(getNameTag);
+        if(s_nameTag != null)
+        {
+            s_nameTag.SetActive(getNameTag);
+            s_ripHand.SetActive(getRipHand);
+            s_monsterFoot.SetActive(getMonsterFoot);
+            s_handcloth.SetActive(getHandcloth);
+            s_saw.SetActive(getSaw);
+            s_foot01.SetActive(getFoot01);
+            s_foot02.SetActive(getFoot02);
+            s_foot03.SetActive(getFoot03);
+        }
+       
     }
     public static void TimeSub(int getTime)
     {
