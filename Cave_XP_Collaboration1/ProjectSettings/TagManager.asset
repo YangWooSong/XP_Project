@@ -8,8 +8,6 @@ TagManager:
   - BtnActive1
   - Empty
   - MonsterRoomDoor
-  - Item
-  - NameTag
   - ToSetting
   - ToWare
   - Puzzle2
